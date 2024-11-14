@@ -3,7 +3,7 @@ publishDate: 2024-01-01
 author: Caroline Brady
 title: About Caroline Brady
 excerpt: Meet Caroline Brady, our dedicated dance director with a passion for inspiring young dancers at AHS, where she not only teaches an array of dance styles but also leads Apex's renowned dance company, ADCompany.
-image: https://images.unsplash.com/photo-1534307671554-9a6d81f4d629?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1651&q=80
+image: ~/assets/images/Brady-happy.JPEG
 tags:
   - staff
   - about us

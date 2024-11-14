@@ -2,7 +2,7 @@
 title: Apex Dance Company Syllabus
 author: Caroline Brady
 publishDate: 2024-08-01 00:00:00
-image: https://images.unsplash.com/photo-1534307671554-9a6d81f4d629?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1651&q=80
+image: ~/assets/images/ADCSpring2023Light.jpeg
 excerpt:
   In this Advanced Level Honors Class, dancers are trained in modern, improvisation, and jazz technique. This pre-college performance company is responsible for all AHS Dance Concerts and Community Outreach Events.
 tags:
