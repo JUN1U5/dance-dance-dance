@@ -1,0 +1,192 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Prices from '~/components/widgets/Pricing.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+const metadata = {
+  title: 'Apex High School Dance Boosters',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Donation & Sponsorship Opportunities"
+    title="Become a Dance Booster!"
+    subtitle="By becoming a sponsor, you would be investing in the future of the arts and helping these young dancers realize their full potential."
+    actions={[
+      { variant: 'primary', text: 'Become a Booster', href: 'https://apex-hs-dance-boosters.square.site/', icon: 'tabler:heart-spark' },
+      { text: 'View Our Sponsors', href: '#sponsors' },
+    ]}
+    image={{
+      src: 'src/assets/images/IMG_7038.png',
+      alt: '',
+      class: 'object-cover rounded-xl mx-auto w-full h-screen',
+    }}
+  />
+
+<!-- Pricing Widget ******************* -->
+
+<Prices
+title="Become a Sponsor"
+subtitle="We are very PEAK proud to be a part of this community!  We would love for you to be a part of this exciting time for Apex High School!  All of our funding comes from parents and businesses like yours."
+prices={[
+  {
+    title: 'Diamond Plus',
+    subtitle: 'Family and Friends Dance Booster Diamond Plus Membership',
+    price: 1000,
+    period: 'per year',
+    items: [
+      {
+        description: '1 Car Magnet'
+      },
+      {
+        description: '1 Decal Sticker',
+      },
+      {
+        description: '1 AHS Dance Water Bottle',
+      },
+      {
+        description: '4 Season Tickets & Reserved Seating to AHS Dance Concerts',
+      },
+      {
+        description: '1 AHS Dance Sweatshirt',
+      }
+    ],
+    callToAction: {
+      target: '_blank',
+      text: 'Get started',
+      href: '#',
+    },
+  },
+  {
+    title: 'Peak',
+    subtitle: 'Peak Business Sponsorship',
+    price: 2500,
+    period: '-',
+    items: [
+      {
+        description: 'Proin vel laoreet',
+      },
+      {
+        description: 'Ut efficitur habitasse egestas',
+      },
+      {
+        description: 'Volutpat hac curabitur',
+      },
+      {
+        description: 'Pellentesque blandit ut nibh',
+      },
+      {
+        description: 'Donec fringilla sem',
+      },
+    ],
+    callToAction: {
+      target: '_blank',
+      text: 'Get started',
+      href: '#',
+    },
+    hasRibbon: true,
+    ribbonTitle: 'popular',
+  },
+  {
+    title: 'premium',
+    subtitle: 'Optimal choice for companies',
+    price: 199,
+    period: 'Per Month',
+    items: [
+      {
+        description: 'Curabitur suscipit risus',
+      },
+      {
+        description: 'Aliquam habitasse malesuada',
+      },
+      {
+        description: 'Suspendisse sit amet blandit',
+      },
+      {
+        description: 'Suspendisse auctor blandit dui',
+      },
+    ],
+    callToAction: {
+      target: '_blank',
+      text: 'Get started',
+      href: '#',
+    },
+  },
+]}
+/>
+
+<!-- Features3 Widget ************** -->
+
+<Features3
+title="Booster Benefits"
+subtitle="Discover the advantages of giving"
+columns={2}
+items={[
+  {
+    title: 'Tiered Pricing Plans',
+    description: 'Choose from a range of pricing plans designed to accommodate different budgets and requirements.',
+    icon: 'tabler:stairs',
+  },
+  {
+    title: 'Transparent Pricing',
+    description: 'Clearly displayed pricing details for each plan, with no hidden costs or unexpected charges.',
+    icon: 'tabler:flip-vertical',
+  },
+  {
+    title: 'Secure Payment Methods',
+    description: 'Secure payment gateways to protect your financial information during transactions.',
+    icon: 'tabler:shield-lock',
+  },
+  {
+    title: 'Instant Access',
+    description: `Immediate access to your chosen plan's features and templates upon subscription.`,
+    icon: 'tabler:accessible',
+  },
+  {
+    title: 'Upgrade Value',
+    description: 'Upgrade to higher-tier plans to unlock more features and benefits for an enhanced experience.',
+    icon: 'tabler:chevrons-up',
+  },
+  {
+    title: '24H support',
+    description: 'Questions answered via live chat, email or phone, every calendar day.',
+    icon: 'tabler:headset',
+  },
+]}
+classes={{ container: 'max-w-5xl' }}
+/>
+
+<!-- Brands Widget ****************** -->
+
+<Brands 
+id="sponsors"
+title="Partnerships & Collaborations"
+subtitle="We are 🏔️ PEAK proud of our community boosters! All of our funding comes from parents and businesses like yours."
+icons={[]}
+images={[
+  {
+    src: 'https://cdcssl.ibsrv.net/ibimg/smb/350x146_80/webmgr/1i/j/4/logo3-removebg-preview.png',
+    alt: 'Starlight Pediatrics',
+  },
+  {
+    src: 'https://www.pngitem.com/pimgs/m/192-1923222_edward-jones-logo-transparent-hd-png-download.png',
+    alt: 'Edward Jones',
+  },
+  {
+    src: 'https://cdn.pixabay.com/photo/2013/10/01/10/29/ebay-189064_1280.png',
+    alt: 'Ebay',
+  },
+
+  {
+    src: 'https://www.pngitem.com/pimgs/m/192-1923222_edward-jones-logo-transparent-hd-png-download.png',
+    alt: 'Edward Jones',
+  },
+]}
+/>
+
+</Layout>

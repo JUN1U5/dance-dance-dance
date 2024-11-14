@@ -1,0 +1,137 @@
+---
+import Content from '~/components/widgets/Content.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+
+
+const metadata = {
+  title: 'Apex High School Dance - Classes',
+};
+
+---
+
+<Layout metadata={metadata}>
+<!-- Content Widget **************** -->
+
+<Content
+isReversed
+tagline="Available Courses"
+title="Our Classes and Companies"
+items={[
+  {
+    title: 'Class resources',
+    icon: 'tabler:bookmark-filled',
+    description:
+    'For student resources, see <a href="/syllabus" style="text-decoration:underline;">syllabus</a>, schedule, and policies.'
+  }
+]}
+image={{
+  src: 'src/assets/images/ADCSpring2023Dark.jpeg',
+  alt: 'Colorful Image',
+}}
+>
+
+<Fragment slot="content" id="ADC">
+  <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Apex Dance Company</h3>
+  In this Advanced Level Honors Class, dancers are trained in modern, improvisation, and jazz technique. This pre-college performance company is responsible for all AHS Dance Concerts and Community Outreach Events.
+</Fragment>
+
+<Fragment slot="bg">
+  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+</Fragment>
+</Content>
+
+<!-- Content Widget **************** -->
+
+<Content
+isAfterContent
+items={[
+  {
+    title: 'High level of customization',
+    icon: 'tabler:bookmark-filled',
+    description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+  },
+]}
+image={{
+  src: 'src/assets/images/HonorsEnsemble-Nov2022.jpeg',
+  alt: 'Honors Ensemble',
+}}
+>
+<Fragment slot="content" id="Honors">
+  <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Honors Ensemble</h3>
+  In this Proficient Level Honors Class, dancers are trained in modern, contemporary, improvisation, and jazz technique. 
+</Fragment>
+
+<Fragment slot="bg">
+  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+</Fragment>
+</Content>
+
+<Content
+isAfterContent
+isReversed
+items={[
+  {
+    title: 'Class resources',
+    icon: 'tabler:bookmark-filled',
+    description:
+    'For student resources, see <a href="">syllabus</a>, schedule, and policies.'
+  }
+]}
+image={{
+  src: 'src/assets/images/WinterConcert2022.jpeg',
+  alt: 'Colorful Image',
+}}
+>
+
+<Fragment slot="content" id="Dance1">
+  <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Dance 1 and 2</h3>
+  In this class, we explore jazz and modern technique in detail. We will also spend time working with Guest Artists in the professional dancing field, observe and  perform with the Apex Dance Company and Honors Level Dance Courses, and learn choreographic strategies to create art that conveys our expressions and ideas!
+</Fragment>
+
+<Fragment slot="bg">
+  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+</Fragment>
+</Content>
+
+<!-- FAQs Widget ******************* -->
+
+<FAQs
+title="Frequently Asked Questions"
+subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+tagline="FAQs"
+classes={{ container: 'max-w-6xl' }}
+items={[
+  {
+    title: 'Why AstroWind?',
+    description:
+      "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+  },
+  {
+    title: 'What do I need to start?',
+    description:
+      'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+  },
+  {
+    title: 'How to install the Astro + Tailwind CSS template?',
+    description:
+      "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+  },
+  {
+    title: "What's something that you don't understand?",
+    description:
+      "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+  },
+  {
+    title: 'What is something that you would like to try again?',
+    description:
+      "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+  },
+  {
+    title: 'If you could only ask one question to each person you meet, what would that question be?',
+    description:
+      "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+  },
+]}
+/>
+</Layout>

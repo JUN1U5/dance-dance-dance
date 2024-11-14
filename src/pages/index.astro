@@ -1,0 +1,113 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import HeroBG from '~/components/widgets/HeroBG.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+const metadata = {
+  title: 'Apex High School Dance',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <HeroBG
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Donate Now',
+        href: 'https://apex-hs-dance-boosters.square.site/',
+        target: '_blank',
+        icon: '',
+      },
+      { text: 'Become a Booster', href: '/boosters', icon: 'tabler:heart-spark'},
+    ]}
+    image= {{ src: '~/assets/images/ADCSpring2023Dark.jpeg', alt: 'Dancers from AHS' }}
+  >
+    <Fragment slot="title">
+      Welcome to the Apex High School Dance Program!
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+         Welcome to the official home to the AHS Dance Program and Boosters. We provide students with a high caliber dance education that develops lifelong skills!
+        </span>
+         <span class="block mb-1 sm:hidden font-bold text-green-500">Dance @ Apex High</span>
+    </Fragment>
+
+</HeroBG>
+
+    <!-- Features2 Widget ************** -->
+
+    <Features2
+    title="Our Incredible Community Sponsors"
+    subtitle="We are 🏔️ PEAK proud of our community boosters! All of our funding comes from parents and businesses like yours."
+    tagline="2024-2025 Sponsors"
+    items={[
+      {
+        title: 'Vance Construction and Remodeling',
+        description: "Bronze Sponsor",
+        icon: 'tabler:trophy',
+      },
+      {
+        title: 'Edward Jones Insurance',
+        description:
+          'Silver Sponsor',
+        icon: 'tabler:medal-2',
+      },
+      {
+        title: 'Starlight Pediatrics',
+        description:
+          'Silver Sponsor',
+        icon: 'tabler:rosette-discount-check',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  
+
+<!-- Brands Widget ****************** -->
+
+<Brands
+title="Partnerships & Collaborations"
+subtitle="We are 🏔️ PEAK proud of our community boosters! All of our funding comes from parents and businesses like yours."
+icons={[]}
+images={[
+  {
+    src: 'https://cdcssl.ibsrv.net/ibimg/smb/350x146_80/webmgr/1i/j/4/logo3-removebg-preview.png',
+    alt: 'Starlight Pediatrics',
+  },
+  {
+    src: 'https://www.pngitem.com/pimgs/m/192-1923222_edward-jones-logo-transparent-hd-png-download.png',
+    alt: 'Edward Jones',
+  },
+  {
+    src: 'https://cdn.pixabay.com/photo/2013/10/01/10/29/ebay-189064_1280.png',
+    alt: 'Ebay',
+  },
+
+  {
+    src: 'https://www.pngitem.com/pimgs/m/192-1923222_edward-jones-logo-transparent-hd-png-download.png',
+    alt: 'Edward Jones',
+  },
+]}
+/>
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  <BlogLatestPosts
+    title="Find out more about the program."
+    information={`Recent announcements from the dance program at Apex High School
+                `}
+  />
+
+
+</Layout>
