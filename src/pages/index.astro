@@ -1,6 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 
+import Hero from '~/components/widgets/Hero.astro';
 import HeroBG from '~/components/widgets/HeroBG.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
@@ -10,35 +11,34 @@ const metadata = {
   title: 'Apex High School Dance',
   ignoreTitleTemplate: true,
 };
+
 ---
-
 <Layout metadata={metadata}>
-  <!-- Hero Widget ******************* -->
+  <!-- Hero ******************* -->
 
-  <HeroBG
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Donate Now',
-        href: 'https://apex-hs-dance-boosters.square.site/',
-        target: '_blank',
-        icon: '',
-      },
-      { text: 'Become a Booster', href: '/boosters', icon: 'tabler:heart-spark'},
-    ]}
-    image= {{ src: '~/assets/images/ADCSpring2023Dark.jpeg', alt: 'Dancers from AHS' }}
-  >
-    <Fragment slot="title">
-      Welcome to the Apex High School Dance Program!
-    </Fragment>
+<HeroBG
+actions={[
+  {
+    variant: 'primary',
+    text: 'Donate Now',
+    href: 'https://apex-hs-dance-boosters.square.site/',
+    target: '_blank',
+    icon: '',
+  },
+  { text: 'Become a Booster', href: '/boosters', icon: 'tabler:heart-spark'},
+]}
+image= {{ src: '~/assets/images/ADCSpring2023Dark.jpeg', alt: 'Dancers from AHS' }}
+>
+<Fragment slot="title">
+  Welcome to the Apex High School Dance Program!
+</Fragment>
 
-    <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-         Welcome to the official home to the AHS Dance Program and Boosters. We provide students with a high caliber dance education that develops lifelong skills!
-        </span>
-         <span class="block mb-1 sm:hidden font-bold text-green-500">Dance @ Apex High</span>
-    </Fragment>
-
+<Fragment slot="subtitle">
+  <span class="hidden sm:inline">
+     Welcome to the official home to the AHS Dance Program and Boosters. We provide students with a high caliber dance education that develops lifelong skills!
+    </span>
+  <span class="block mb-1 sm:hidden font-bold text-green-500">Dance @ Apex High</span>
+</Fragment>
 </HeroBG>
 
     <!-- Features2 Widget ************** -->
