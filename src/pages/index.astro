@@ -2,9 +2,8 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import HeroBG from '~/components/widgets/HeroBG.astro';
-import Features2 from '~/components/widgets/Features2.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import Brands from '~/components/widgets/Brands.astro';
+import Sponsors from '~/components/widgets/Sponsors.astro';
 
 const metadata = {
   title: 'Apex High School Dance',
@@ -40,40 +39,21 @@ image= {{ src: '~/assets/images/ADCSpring2023Dark.jpeg', alt: 'Dancers from AHS'
 </Fragment>
 </HeroBG>
 
-<!-- Brands Widget ****************** -->
+<!-- Sponsors Widget ****************** -->
 
-<Brands
+<Sponsors
 title="Our Incredible Community Sponsors"
 tagline="2024-2025 Sponsors"
 subtitle="We are 🏔️ PEAK proud of our community boosters! All of our funding comes from parents and businesses like yours."
-icons={[]}
-images={[
-  {
-    src: 'https://cdcssl.ibsrv.net/ibimg/smb/350x146_80/webmgr/1i/j/4/logo3-removebg-preview.png',
-    alt: 'Starlight Pediatrics',
-  },
-  {
-    src: 'https://cdn.pixabay.com/photo/2013/10/01/10/29/ebay-189064_1280.png',
-    alt: 'Ebay',
-  },
-  {
-    src: 'https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404_1280.png',
-    alt: 'Paypal',
-  },
-  {
-    src: 'https://cdn.pixabay.com/photo/2021/12/06/13/48/visa-6850402_1280.png',
-     alt: 'Visa',
-  },
-]}
 />
 
-  <!-- HighlightedPosts Widget ******* -->
+<!-- HighlightedPosts Widget ******* -->
 
-  <BlogLatestPosts
-    title="Find out more about the program."
-    information={`Recent announcements from the dance program at Apex High School
-                `}
-  />
+<BlogLatestPosts
+  title="Find out more about the program."
+  information={`Recent announcements from the dance program at Apex High School
+    `}
+/>
 
 
 </Layout>
