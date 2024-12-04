@@ -13,40 +13,49 @@ const {
   classes = {},
   bg = await Astro.slots.render('bg'),
 } = Astro.props;
-
 ---
 
 <WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
-<Headline title={title} subtitle={subtitle} tagline={tagline} />
+  <Headline title={title} subtitle={subtitle} tagline={tagline} />
   <container class="flex flex-wrap justify-center gap-3">
-    <div class="relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6 mt-2 max-w-96">
-        <Image src='~/assets/images/sponsor_SninskiSchmitt.png' alt='Sninski & Schmitt Family Dentistry' width="" />
-        <h3 class="text-xl font-bold my-2">Sninski & Schmitt <br> Family Dentistry</h3>
-        <p class="text-muted">Gold Sponsor</p>
+    <div
+      class="relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6 mt-2 max-w-96"
+    >
+      <Image src="~/assets/images/sponsor_SninskiSchmitt.png" alt="Sninski & Schmitt Family Dentistry" width="" />
+      <h3 class="text-xl font-bold my-2">Sninski & Schmitt <br /> Family Dentistry</h3>
+      <p class="text-muted">Gold Sponsor</p>
     </div>
 
-    <div class="relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6 mt-2 max-w-96">
-        <Image src='~/assets/images/sponsor_Leith.jpg' alt='Leith Acura of Cary' width=""/>
-        <h3 class="text-xl font-bold my-2">Leith Acura of Cary</h3>
-        <p class="text-muted">Peak Sponsor</p>
+    <div
+      class="relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6 mt-2 max-w-96"
+    >
+      <Image src="~/assets/images/sponsor_Leith.jpg" alt="Leith Acura of Cary" width="" />
+      <h3 class="text-xl font-bold my-2">Leith Acura of Cary</h3>
+      <p class="text-muted">Peak Sponsor</p>
     </div>
 
-    <div class="relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6 mt-2 max-w-96">
-        <Image src={Khara} alt='Khara Orthodontics' width="250" />
-        <h3 class="text-xl font-bold my-2">Khara Orthodontics</h3>
-        <p class="text-muted">Silver Sponsor</p>
+    <div
+      class="relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6 mt-2 max-w-96"
+    >
+      <Image src={Khara} alt="Khara Orthodontics" width="250" />
+      <h3 class="text-xl font-bold my-2">Khara Orthodontics</h3>
+      <p class="text-muted">Silver Sponsor</p>
     </div>
 
-    <div class="rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6 mt-2 max-w-96">
-        <Image src='~/assets/images/sponsor_darringuay.jpg' alt='Darrin' />
-        <h3 class="text-xl font-bold my-2">Edwards Jones - Darrin Guay</h3>
-        <p class="text-muted">Silver Sponsor</p>
+    <div
+      class="rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6 mt-2 max-w-96"
+    >
+      <Image src="~/assets/images/sponsor_darringuay.jpg" alt="Darrin" />
+      <h3 class="text-xl font-bold my-2">Edwards Jones - Darrin Guay</h3>
+      <p class="text-muted">Silver Sponsor</p>
     </div>
 
-    <div class="rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6 mt-2 max-w-96">
-        <Image src='~/assets/images/sponsor_Beaverslog.jpg' alt='Beavers Family Dentistry' />
-        <h3 class="text-xl font-bold my-2">Beavers Family Dentistry</h3>
-        <p class="text-muted">Silver Sponsor</p>
+    <div
+      class="rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6 mt-2 max-w-96"
+    >
+      <Image src="~/assets/images/sponsor_Beaverslog.jpg" alt="Beavers Family Dentistry" />
+      <h3 class="text-xl font-bold my-2">Beavers Family Dentistry</h3>
+      <p class="text-muted">Silver Sponsor</p>
     </div>
   </container>
 </WidgetWrapper>

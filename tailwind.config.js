@@ -12,32 +12,32 @@ export default {
         accent: 'var(--aw-color-accent)',
         default: 'var(--aw-color-text-default)',
         muted: 'var(--aw-color-text-muted)',
-        'golden': {
+        golden: {
           900: '#c2781a',
-          800: '#c99a2e', /* main */
+          800: '#c99a2e' /* main */,
           700: '#cdb039',
           400: '#d6dc63',
           300: '#dbe17b',
-          },
-        }
-      },
-      fontFamily: {
-        sans: ['var(--aw-font-sans, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
-        serif: ['var(--aw-font-serif, ui-serif)', ...defaultTheme.fontFamily.serif],
-        heading: ['var(--aw-font-heading, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
-      },
-
-      animation: {
-        fade: 'fadeInUp 1s both',
-      },
-
-      keyframes: {
-        fadeInUp: {
-          '0%': { opacity: 0, transform: 'translateY(2rem)' },
-          '100%': { opacity: 1, transform: 'translateY(0)' },
         },
       },
     },
+    fontFamily: {
+      sans: ['var(--aw-font-sans, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
+      serif: ['var(--aw-font-serif, ui-serif)', ...defaultTheme.fontFamily.serif],
+      heading: ['var(--aw-font-heading, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
+    },
+
+    animation: {
+      fade: 'fadeInUp 1s both',
+    },
+
+    keyframes: {
+      fadeInUp: {
+        '0%': { opacity: 0, transform: 'translateY(2rem)' },
+        '100%': { opacity: 1, transform: 'translateY(0)' },
+      },
+    },
+  },
   plugins: [
     typographyPlugin,
     plugin(({ addVariant }) => {

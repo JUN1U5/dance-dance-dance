@@ -99,8 +99,7 @@ export const footerData = {
       ],
     },
   ],
-  secondaryLinks: [
-  ],
+  secondaryLinks: [],
   socialLinks: [
     { ariaLabel: 'Instagram', text: 'Instagram', href: 'https://www.instagram.com/apexhsdanceprogram/' },
     { ariaLabel: 'Facebook', text: 'Facebook', href: 'https://www.facebook.com/apexhsdance/' },

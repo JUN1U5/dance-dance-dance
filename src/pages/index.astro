@@ -9,51 +9,48 @@ const metadata = {
   title: 'Apex High School Dance',
   ignoreTitleTemplate: true,
 };
-
 ---
+
 <Layout metadata={metadata}>
   <!-- Hero ******************* -->
 
-<HeroBG
-actions={[
-  {
-    variant: 'primary',
-    text: 'Donate Now',
-    href: 'https://apex-hs-dance-boosters.square.site/',
-    target: '_blank',
-    icon: '',
-  },
-  { text: 'Become a Booster', href: '/boosters', icon: 'tabler:heart-spark'},
-]}
-image= {{ src: '~/assets/images/ADCSpring2023Dark.jpeg', alt: 'Dancers from AHS' }}
->
-<Fragment slot="title">
-  Welcome to the Apex High School Dance Program!
-</Fragment>
+  <HeroBG
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Donate Now',
+        href: 'https://apex-hs-dance-boosters.square.site/',
+        target: '_blank',
+        icon: '',
+      },
+      { text: 'Become a Booster', href: '/boosters', icon: 'tabler:heart-spark' },
+    ]}
+    image={{ src: '~/assets/images/ADCSpring2023Dark.jpeg', alt: 'Dancers from AHS' }}
+  >
+    <Fragment slot="title"> Welcome to the Apex High School Dance Program! </Fragment>
 
-<Fragment slot="subtitle">
-  <span class="hidden sm:inline">
-     Welcome to the official home to the AHS Dance Program and Boosters. We provide students with a high caliber dance education that develops lifelong skills!
-    </span>
-  <span class="block mb-1 sm:hidden font-bold">Dance @ Apex High</span>
-</Fragment>
-</HeroBG>
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        Welcome to the official home to the AHS Dance Program and Boosters. We provide students with a high caliber
+        dance education that develops lifelong skills!
+      </span>
+      <span class="block mb-1 sm:hidden font-bold">Dance @ Apex High</span>
+    </Fragment>
+  </HeroBG>
 
-<!-- Sponsors Widget ****************** -->
+  <!-- Sponsors Widget ****************** -->
 
-<Sponsors
-title="Our Incredible Community Sponsors"
-tagline="2024-2025 Sponsors"
-subtitle="We are 🏔️ PEAK proud of our community boosters! All of our funding comes from parents and businesses like yours."
-/>
+  <Sponsors
+    title="Our Incredible Community Sponsors"
+    tagline="2024-2025 Sponsors"
+    subtitle="We are 🏔️ PEAK proud of our community boosters! All of our funding comes from parents and businesses like yours."
+  />
 
-<!-- HighlightedPosts Widget ******* -->
+  <!-- HighlightedPosts Widget ******* -->
 
-<BlogLatestPosts
-  title="Find out more about the program."
-  information={`Recent announcements from the dance program at Apex High School
+  <BlogLatestPosts
+    title="Find out more about the program."
+    information={`Recent announcements from the dance program at Apex High School
     `}
-/>
-
-
+  />
 </Layout>

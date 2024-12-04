@@ -6,31 +6,33 @@ import Button from '~/components/ui/Button.astro';
 const metadata = {
   title: 'About us',
 };
-
 ---
 
 <Layout metadata={metadata}>
-
- <Content
+  <Content
     isReversed
     tagline="About Us"
     title="Meet Our Instructors"
-    items={[
-    ]}
+    items={[]}
     image={{
       src: '~/assets/images/Brady-happy-cropped.jpg',
       alt: 'Picture of Mrs. Brady',
-      }}
+    }}
   >
-
-  <Fragment slot="content">
-    <h3 class="text-1xl font-bold tracking-tight dark:text-white sm:text-3xl mb-1">Caroline Brady</h3>
-    <p class="text-base">
-      Meet Caroline Brady, our dedicated dance director with a passion for inspiring young dancers at AHS, where she not only teaches an array of dance styles but also leads Apex renowned dance company, ADCompany. Originally hailing from Fuquay-Varina, NC, Mrs. Bradys journey in the world of dance education has been nothing short of remarkable. Wake County born and bred, she graduated from East Carolina Universitys BFA Program in Dance Education to embark on a path that has seen her excel in various dance disciplines. Her extensive training and experience encompass jazz, modern, improvisation, composition, ballet, tap, hip hop, yoga, and a myriad of other genres. dedication to her craft extends beyond the classroom.
-    </p>
-    <div class="mt-2 text-base">
-      <Button variant="link" href="/caroline-brady">Learn more</Button>
-    </div>
+    <Fragment slot="content">
+      <h3 class="text-1xl font-bold tracking-tight dark:text-white sm:text-3xl mb-1">Caroline Brady</h3>
+      <p class="text-base">
+        Meet Caroline Brady, our dedicated dance director with a passion for inspiring young dancers at AHS, where she
+        not only teaches an array of dance styles but also leads Apex renowned dance company, ADCompany. Originally
+        hailing from Fuquay-Varina, NC, Mrs. Bradys journey in the world of dance education has been nothing short of
+        remarkable. Wake County born and bred, she graduated from East Carolina Universitys BFA Program in Dance
+        Education to embark on a path that has seen her excel in various dance disciplines. Her extensive training and
+        experience encompass jazz, modern, improvisation, composition, ballet, tap, hip hop, yoga, and a myriad of other
+        genres. dedication to her craft extends beyond the classroom.
+      </p>
+      <div class="mt-2 text-base">
+        <Button variant="link" href="/caroline-brady">Learn more</Button>
+      </div>
     </Fragment>
 
     <Fragment slot="bg">
@@ -38,20 +40,29 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <Content
-  items={[
-  ]}
->
-<Fragment slot="content">
-  <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Madeline Kelly</h3>
-  <p class="text-base">Meet Caroline Brady, our dedicated dance director with a passion for inspiring young dancers at AHS, where she not only teaches an array of dance styles but also leads Apex renowned dance company, ADCompany. Originally hailing from Fuquay-Varina, NC, Mrs. Bradys journey in the world of dance education has been nothing short of remarkable. Wake County born and bred, she graduated from East Carolina Universitys BFA Program in Dance Education to embark on a path that has seen her excel in various dance disciplines. Her extensive training and experience encompass jazz, modern, improvisation, composition, ballet, tap, hip hop, yoga, and a myriad of other genres. dedication to her craft extends beyond the classroom. As an alumna of the American Dance Festival, she has not only performed works but also had the privilege of studying under the guidance of notable choreographers such as Gus Giordano, Danielle Sheather, Dirk Lumbard, Dave Ingram, John Dixon, Galina Panova, Ji-Eun Lee, Gerri Houlihan, and Teal Darkenwald. commitment to dance education reaches far and wide. In addition to her role at AHS, she regularly shares her expertise at several local studios to enrich the dance community. Caroline Bradys pursuit of knowledge and excellence in the world of dance is evident through her active involvement in organizations such as the National Dance Education Organization and the North Carolina Dance Education Organization
-  </p>
-</Fragment>
+  <Content items={[]}>
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Madeline Kelly</h3>
+      <p class="text-base">
+        Meet Caroline Brady, our dedicated dance director with a passion for inspiring young dancers at AHS, where she
+        not only teaches an array of dance styles but also leads Apex renowned dance company, ADCompany. Originally
+        hailing from Fuquay-Varina, NC, Mrs. Bradys journey in the world of dance education has been nothing short of
+        remarkable. Wake County born and bred, she graduated from East Carolina Universitys BFA Program in Dance
+        Education to embark on a path that has seen her excel in various dance disciplines. Her extensive training and
+        experience encompass jazz, modern, improvisation, composition, ballet, tap, hip hop, yoga, and a myriad of other
+        genres. dedication to her craft extends beyond the classroom. As an alumna of the American Dance Festival, she
+        has not only performed works but also had the privilege of studying under the guidance of notable choreographers
+        such as Gus Giordano, Danielle Sheather, Dirk Lumbard, Dave Ingram, John Dixon, Galina Panova, Ji-Eun Lee, Gerri
+        Houlihan, and Teal Darkenwald. commitment to dance education reaches far and wide. In addition to her role at
+        AHS, she regularly shares her expertise at several local studios to enrich the dance community. Caroline Bradys
+        pursuit of knowledge and excellence in the world of dance is evident through her active involvement in
+        organizations such as the National Dance Education Organization and the North Carolina Dance Education
+        Organization
+      </p>
+    </Fragment>
 
-  <Fragment slot="bg">
-    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-  </Fragment>
-</Content>
-
-
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
 </Layout>
