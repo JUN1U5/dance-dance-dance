@@ -12,6 +12,14 @@ export default {
         accent: 'var(--aw-color-accent)',
         default: 'var(--aw-color-text-default)',
         muted: 'var(--aw-color-text-muted)',
+        'golden': {
+          900: '#c2781a',
+          800: '#c99a2e', /* main */
+          700: '#cdb039',
+          400: '#d6dc63',
+          300: '#dbe17b',
+          },
+        }
       },
       fontFamily: {
         sans: ['var(--aw-font-sans, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
@@ -30,7 +38,6 @@ export default {
         },
       },
     },
-  },
   plugins: [
     typographyPlugin,
     plugin(({ addVariant }) => {
