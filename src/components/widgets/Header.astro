@@ -29,20 +29,14 @@ export interface Props {
   position?: string;
 }
 
-const {
-  id = 'header',
-  links = [],
-  isSticky = false,
-  isFullWidth = false,
-  position = 'center',
-} = Astro.props;
+const { id = 'header', links = [], isSticky = false, isFullWidth = false, position = 'center' } = Astro.props;
 
 const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
 ---
 
 <header
   class:list={[
-    { sticky: isSticky, relative: !isSticky, },
+    { sticky: isSticky, relative: !isSticky },
     'top-0 z-40 flex-none mx-auto w-full border-b border-gray-50/0 transition-[opacity] ease-in-out',
   ]}
   {...isSticky ? { 'data-aw-sticky-header': true } : {}}
