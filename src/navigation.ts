@@ -107,6 +107,6 @@ export const footerData = {
     { ariaLabel: 'WCPSS', text: 'Wake County Public Schools', href: 'https://www.wcpss.net/' },
   ],
   footNote: `
-    Website by <a class="text-blue-600 underline dark:text-muted" href="https://bjernigan.com/"> B Jernigan</a>
+    Website by <a class="text-blue-600 underline text-muted" href="https://bjernigan.com/"> B Jernigan</a>
   `,
 };

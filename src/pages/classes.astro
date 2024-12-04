@@ -8,7 +8,6 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <!-- Content Widget **************** -->
 
   <Content
     isReversed
@@ -27,15 +26,12 @@ const metadata = {
       alt: 'Company dancers in the spring 2023 show',
       loading: 'eager',
     }}
+    id="ADC"
   >
     <Fragment slot="content" id="ADC">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Apex Dance Company</h3>
       In this Advanced Level Honors Class, dancers are trained in modern, improvisation, and jazz technique. This pre-college
       performance company is responsible for all AHS Dance Concerts and Community Outreach Events.
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
@@ -45,23 +41,20 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
+        title: 'Class resources',
         icon: 'tabler:bookmark-filled',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        description: 'For student resources, see <a href="">syllabus</a>, schedule, and policies.',
       },
     ]}
     image={{
       src: '~/assets/images/HonorsEnsemble-Nov2022.jpeg',
       alt: 'Honors Ensemble',
     }}
+    id="Honors"
   >
     <Fragment slot="content" id="Honors">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Honors Ensemble</h3>
       In this Proficient Level Honors Class, dancers are trained in modern, contemporary, improvisation, and jazz technique.
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
@@ -79,16 +72,13 @@ const metadata = {
       src: '~/assets/images/WinterConcert2022.jpeg',
       alt: 'Colorful Image',
     }}
+    id="Dance1"
   >
     <Fragment slot="content" id="Dance1">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Dance 1 and 2</h3>
       In this class, we explore jazz and modern technique in detail. We will also spend time working with Guest Artists in
       the professional dancing field, observe and perform with the Apex Dance Company and Honors Level Dance Courses, and
       learn choreographic strategies to create art that conveys our expressions and ideas!
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 </Layout>
