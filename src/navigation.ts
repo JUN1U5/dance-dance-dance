@@ -87,7 +87,10 @@ export const footerData = {
       title: 'Key Resources',
       links: [
         { text: 'Dance Handbook', href: getPermalink('/handbook') },
-        { text: 'Schedule', href: 'https://docs.google.com/document/d/1srAOMW7tHno96vPwmzlWDppqe5-ux-FOHQ3BElFgZW0/edit?tab=t.0' },
+        {
+          text: 'Schedule',
+          href: 'https://docs.google.com/document/d/1srAOMW7tHno96vPwmzlWDppqe5-ux-FOHQ3BElFgZW0/edit?tab=t.0',
+        },
       ],
     },
     {

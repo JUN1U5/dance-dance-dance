@@ -1,8 +1,8 @@
 ---
 title: Apex High School Dance Program Handbook
 author: Caroline Brady
-publishDate: 2020-03-04 00:00:00
-image: https://images.unsplash.com/photo-1534307671554-9a6d81f4d629?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1651&q=80
+publishDate: 2024-06-04 00:00:00
+image: ~/assets/images/ADCSpring 2023_Jazz0127.jpg
 excerpt: Congratulations! You are a part of the Apex High School Dance Program. In order to work together and have a successful year, it is important for students and parents to read and understand the AHS Dance Program Handbook.
 tags:
   - Handbook
