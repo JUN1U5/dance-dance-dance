@@ -57,7 +57,7 @@ export const headerData = {
         },
         {
           text: 'Events',
-          href: getPermalink('events', 'category'),
+          href: getPermalink('events', 'tag'),
         },
         {
           text: 'Guest Artists',
