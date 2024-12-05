@@ -36,7 +36,7 @@ export const headerData = {
       links: [
         {
           text: '2023-2024 Schedule',
-          href: getPermalink('/landing/lead-generation'),
+          href: 'https://docs.google.com/document/d/1srAOMW7tHno96vPwmzlWDppqe5-ux-FOHQ3BElFgZW0/edit?tab=t.0',
         },
         {
           text: 'Dance Handbook',
@@ -86,8 +86,8 @@ export const footerData = {
     {
       title: 'Key Resources',
       links: [
-        { text: 'Dance Handbook', href: '#' },
-        { text: 'Schedule', href: '#' },
+        { text: 'Dance Handbook', href: getPermalink('/handbook') },
+        { text: 'Schedule', href: 'https://docs.google.com/document/d/1srAOMW7tHno96vPwmzlWDppqe5-ux-FOHQ3BElFgZW0/edit?tab=t.0' },
       ],
     },
     {
@@ -107,6 +107,6 @@ export const footerData = {
     { ariaLabel: 'WCPSS', text: 'Wake County Public Schools', href: 'https://www.wcpss.net/' },
   ],
   footNote: `
-    Website by <a class="text-blue-600 underline text-muted" href="https://bjernigan.com/"> B Jernigan</a>
+    Built with <a class="text-muted hover:text-white" href="https://astro.build/">Astro</a> by <a class="underline text-muted hover:text-white" href="https://bjernigan.com/"> B Jernigan</a>
   `,
 };
