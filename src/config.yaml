@@ -1,16 +1,16 @@
 site:
   name: Apex High Dance
-  site: 'https://astrowind.vercel.app'
+  site: 'https://www.apexhsdanceprogram.com'
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  googleSiteVerificationId: zcz4iCg6pvCYRpKvbd7pU8wSjCuuI93kS0Q89Pr9C48
 
 # Default SEO metadata
 metadata:
   title:
     default: Apex High School Dance Program
-    template: '%s — AstroWind'
+    template: '%s — Apex High School Dance'
   description: "Apex High School's Dance Program Homepage"
   robots:
     index: true
@@ -23,8 +23,8 @@ metadata:
         height: 628
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: '@ApexHighDanceT1'
+    site: '@ApexHighDanceT1'
     cardType: summary_large_image
 
 i18n:
