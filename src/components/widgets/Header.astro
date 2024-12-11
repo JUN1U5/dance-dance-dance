@@ -29,7 +29,7 @@ export interface Props {
   position?: string;
 }
 
-const { id = 'header', links = [], isSticky = false, isFullWidth = false, position = 'center' } = Astro.props;
+const { id = 'header', links = [], isSticky = false, isFullWidth = false, position = 'right' } = Astro.props;
 
 const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
 ---
