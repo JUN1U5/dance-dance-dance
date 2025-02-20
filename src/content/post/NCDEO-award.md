@@ -1,9 +1,9 @@
 ---
 publishDate: 2025-02-03
-title: Mrs. Brady Receives NCDEO Award
 author: Admin
+title: Mrs. Brady Receives NCDEO Award
 excerpt: NCDEO awards Mrs. Brady the 2025 Outstanding Educator Award
-image: ~/assets/images/brady-award-cropped.png
+image: ~/assets/images/brady-award-cropped.jpg
 tags:
   - awards
   - staff
