@@ -1,7 +1,7 @@
 ---
-publishDate: 2025-05-06
-author: Admin
 title: AHS Dance Auditions
+author: Admin
+publishDate: 2025-05-06
 excerpt: Auditions coming up May 28 and 29
 image: ~/assets/images/2025Dance.jpg
 tags:
